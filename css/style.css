@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;800;900&family=Roboto:wght@100;300;500;900&display=swap');
+
+:root{
+    --color-fondo: #F3F5FC;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+    --light-gray: #D8DFE8;
+    --light-gray-200: #EFF1FA;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+html{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*Propriedade para que o preenchimento e a borda passem a fazer parte do cálculo da largura da caixa e não a adicione posteriormente.*/
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-fondo);
+}
+
+.logo{
+   margin: 40px;
+}
+
+.main{
+    width: 960px;
+    height: 1024px;
+}
+
+.input-text{
+    width: 577px;
+    height: 100px;
+    left: 240px;
+    top: 168px;
+    border: none;
+    background-color: var(--color-fondo);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 150%;
+    color: var(--dark-blue-300);
+    resize: none;
+}
+
+.input-text-resultado{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    width: 336px;
+    height: 781px;
+    left: 32px;
+    top: 32px;
+    border: none;
+    resize: none;
+    color: var(--gray-400);
+}
+
+.seccion-input-text{
+    position: absolute;
+    left: 240px;
+    top: 168px;
+}
+
+.seccion-resultados{
+    position: absolute;
+    display: none;
+    left: 1000px;
+    top: 40px;
+    width: 400px;
+    height: 944px;
+    background: var(--white);
+    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.88);
+    border-radius: 32px;
+}
+
+.seccion_noencontrado{
+    position: absolute;
+    display: inline-block;
+    left: 1000px;
+    top: 40px;
+    width: 400px;
+    height: 944px;
+    background: var(--white);
+    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.88);
+    border-radius: 32px;
+}
+
+.img_muneco{
+   position: absolute;
+   width: 336px;
+   height: 304px;
+   left: 32px;
+   right: 32px;
+   top:283px;
+   margin-bottom: 20px;
+}
+
+.seccion_noencontrado p{
+    position: absolute;
+    color: var(--gray-500);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 120%;
+    font-family: 'Roboto', sans-serif;
+    font-style:normal;
+    top: 560px;
+    left:32px;
+    right: 32px;
+    text-align: center;
+}
+
+.seccion_noencontrado span{
+    position: absolute;
+    color: var(--gray-400);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+    font-family: 'Roboto', sans-serif;
+    font-style:normal;
+    top: 660px;
+    left:32px;
+    right: 32px;
+    text-align: center;
+}
+
+.botones{
+    display: flex;
+    position: absolute;
+    top: 700px;
+    margin: 0px 24px;
+}
+
+.btn{
+    cursor: pointer;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    margin: 0 5px 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 24px;
+    border: 1px solid var(--dark-blue-300);
+}
+
+.btn_encriptar{
+    color: var(--white);
+    background: var(--dark-blue-300);
+}
+
+.btn_encriptar:hover{
+    transition: 1s all;
+    background: var(--light-gray-200);
+    color: var(--dark-blue-300);
+}
+
+.btn_desencriptar{
+    color: var(--dark-blue-300);
+    background: var(--light-gray);
+ }
+
+ .btn_desencriptar:hover{
+     transition: 1s all;
+     background:var(--dark-blue-400);
+     color: var(--white);
+ }
+
+ .btn_copiar{
+    position: absolute;
+    top: 820px;
+    left: 32px;
+    color: var(--dark-blue-300);
+    background: var(--light-gray);
+ }
+
+h6{
+    position: absolute;
+    top: 650px;
+    left: 32px;
+    color: var(--gray-400);
+    opacity: 0.8;
+}
+
+/* SECTION FOOTER */
+
+.footer{
+    display: grid;
+    height: 100%;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+    grid-template-areas: "author follow-me social-network";
+}
+
+.footer .author{
+    grid-template-areas: author;
+    justify-content: center;
+    padding: 26px;
+    color: var(--white);
+}
+
+.footer .follow-me{
+    grid-template-areas: follow-me;
+    text-align: center;
+}
+
+.footer .social-network{
+    grid-template-areas: social-network;
+    font-size: 1.3em;
+}
+
+.footer .social-network .fa-brands{
+    margin-right: 15px;
+    color: #EDCB54;
+}
+
+.footer .social-network .fa-brands:hover{
+    color: var(--white);
+
+}
